@@ -39,7 +39,6 @@ if kw == '':
 
 parse_html('https://news.ycombinator.com', kw)
 for i in range(2, 17):
-    print(i)
     parse_html('https://news.ycombinator.com/?p='+str(i), kw)
     time.sleep(randrange(7)+1)
 
